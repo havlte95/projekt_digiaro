@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow admin / temporary files
+Disallow: /tmp/
+Disallow: /*.log$
+
+# Sitemap
+Sitemap: https://www.digiaro.cz/sitemap.xml
+
+# Crawl-delay suggestion
+Crawl-delay: 2

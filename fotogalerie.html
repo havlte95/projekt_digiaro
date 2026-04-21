@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fotogalerie – ukázky projektů | Digiaro</title>
+  <meta name="description" content="Prohlédněte si fotogalerii projektů agentury Digiaro. Ukázky webových stránek, kampaní, kancelářského zázemí a týmu digitální marketingové agentury.">
+  <meta name="keywords" content="fotogalerie digitální agentura, ukázky webů, portfolio agentury, Digiaro galerie">
+  <meta name="author" content="Digiaro">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.digiaro.cz/fotogalerie">
+  <meta property="og:title" content="Fotogalerie – ukázky projektů | Digiaro">
+  <meta property="og:url" content="https://www.digiaro.cz/fotogalerie">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+</head>
+<body>
+  <div class="topbar">📸 Prohlédněte si naše projekty – <a href="kontakt.html">Chci podobný výsledek →</a></div>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Digi<span>aro</span></a>
+      <button class="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Hlavní navigace">
+        <ul>
+          <li><a href="index.html">Úvod</a></li>
+          <li><a href="sluzby.html">Služby</a></li>
+          <li><a href="reference.html">Reference</a></li>
+          <li><a href="o-nas.html">O nás</a></li>
+          <li><a href="fotogalerie.html">Galerie</a></li>
+          <li><a href="kontakt.html" class="btn-nav">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <nav aria-label="Breadcrumb">
+      <a href="index.html">Úvod</a> › <span>Fotogalerie</span>
+    </nav>
+  </div>
+
+  <div class="page-hero">
+    <h1>Fotogalerie projektů</h1>
+    <p>Ukázky naší práce, kancelářského zázemí a akcí agentury Digiaro. Chcete vidět více? Prohlédněte si naše <a href="reference.html" style="color:var(--accent)">případové studie</a>.</p>
+  </div>
+
+  <main>
+    <!-- FILTER BUTTONS -->
+    <section style="padding-bottom:0">
+      <div class="section-inner">
+        <div class="text-center">
+          <span class="section-tag">Galerie</span>
+          <h2 class="section-title">Naše projekty v obrazech</h2>
+          <p class="section-sub">Kliknutím na obrázek otevřete plné zobrazení. Přes 20 ukázek z naší práce.</p>
+        </div>
+        <div style="display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center;margin-bottom:2rem">
+          <button class="btn btn-primary" onclick="filterGallery('all')" id="btn-all">Vše</button>
+          <button class="btn btn-outline" onclick="filterGallery('weby')" id="btn-weby" style="color:var(--primary)">Webové stránky</button>
+          <button class="btn btn-outline" onclick="filterGallery('kampane')" id="btn-kampane" style="color:var(--primary)">Kampaně</button>
+          <button class="btn btn-outline" onclick="filterGallery('tym')" id="btn-tym" style="color:var(--primary)">Tým &amp; kancelář</button>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="section-inner">
+        <!-- GALLERY GRID - 20+ images in two sizes (thumbs + large via data-large) -->
+        <div class="gallery-grid" id="gallery-grid">
+
+          <!-- WEBY -->
+          <h3 class="sr-only">Webové stránky a projekty</h3>
+          <div class="gallery-item" data-category="weby"
+               data-large="https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&h=800&fit=crop"
+               title="Web pro e-shop EcoShop.cz">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=300&fit=crop"
+                 alt="Tvorba webových stránek – e-shop EcoShop.cz" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="weby"
+               data-large="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&h=800&fit=crop"
+               title="Firemní web Realitní skupiny Praha">
+            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&h=300&fit=crop"
+                 alt="Tvorba firemního webu – Realitní skupina Praha" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="weby"
+               data-large="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop"
+               title="Dashboard a analytika webu">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                 alt="SEO analytika a dashboard výsledků" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="weby"
+               data-large="https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=1200&h=800&fit=crop"
+               title="Mobilní verze webu – responzivní design">
+            <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=400&h=300&fit=crop"
+                 alt="Responzivní mobilní web – tvorba webových stránek" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="weby"
+               data-large="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=800&fit=crop"
+               title="Web development a programování">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop"
+                 alt="Vývoj webových stránek – kód a programování" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="weby"
+               data-large="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=1200&h=800&fit=crop"
+               title="UX design a prototypy">
+            <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=400&h=300&fit=crop"
+                 alt="UX design a návrh webových stránek" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <!-- KAMPANE -->
+          <h3 class="sr-only">Online kampaně a marketing</h3>
+          <div class="gallery-item" data-category="kampane"
+               data-large="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop"
+               title="Google Ads kampaně – přehled výsledků">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
+                 alt="Správa PPC kampaní v Google Ads – výsledky" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="kampane"
+               data-large="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&h=800&fit=crop"
+               title="Social media – kampaně na Instagramu a Facebooku">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=300&fit=crop"
+                 alt="Marketing na sociálních sítích – Facebook a Instagram" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="kampane"
+               data-large="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=800&fit=crop"
+               title="SEO výsledky – nárůst organické návštěvnosti">
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=300&fit=crop"
+                 alt="SEO optimalizace – nárůst organické návštěvnosti Google" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="kampane"
+               data-large="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1200&h=800&fit=crop"
+               title="Email marketing a newslettery">
+            <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400&h=300&fit=crop"
+                 alt="Email marketing – newsletter kampaně pro klienty" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="kampane"
+               data-large="https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=1200&h=800&fit=crop"
+               title="Video reklama a obsah pro YouTube">
+            <img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=400&h=300&fit=crop"
+                 alt="Video obsah a YouTube reklama pro klienty agentury" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="kampane"
+               data-large="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&h=800&fit=crop"
+               title="Obsahový marketing a SEO copywriting">
+            <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=300&fit=crop"
+                 alt="Obsahový marketing a SEO texty pro weby" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="kampane"
+               data-large="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=800&fit=crop"
+               title="Technologické nástroje a software">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop"
+                 alt="Digitální nástroje pro online marketing – SEMrush GA4" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <!-- TYM -->
+          <h3 class="sr-only">Tým a kancelář</h3>
+          <div class="gallery-item" data-category="tym"
+               data-large="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=800&fit=crop"
+               title="Tým Digiaro – brainstorming">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop"
+                 alt="Tým agentury Digiaro při brainstormingu strategie" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="tym"
+               data-large="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=800&fit=crop"
+               title="Týmová schůzka nad kampaněmi">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+                 alt="Tým Digiaro na schůzce – online marketing kampaně" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="tym"
+               data-large="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=800&fit=crop"
+               title="Kancelář agentury Digiaro – Praha">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop"
+                 alt="Kancelář digitální agentury Digiaro v Praze" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="tym"
+               data-large="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&h=800&fit=crop"
+               title="Pracovní prostředí – open space">
+            <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=400&h=300&fit=crop"
+                 alt="Moderní open space kancelář agentury Digiaro" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="tym"
+               data-large="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=800&fit=crop"
+               title="Prezentace výsledků klientům">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop"
+                 alt="Prezentace výsledků online marketingu klientům" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="tym"
+               data-large="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&h=800&fit=crop"
+               title="Vzdělávání a workshopy v Digiaro">
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop"
+                 alt="Workshop a vzdělávání týmu – digitální marketing" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="tym"
+               data-large="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=800&fit=crop"
+               title="Klientská konzultace v Digiaro">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
+                 alt="Konzultace s klientem – online marketing strategie" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="weby"
+               data-large="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&h=800&fit=crop"
+               title="Wireframes a designové návrhy webu">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop"
+                 alt="Wireframe a návrh webu – UX design proces" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+          <div class="gallery-item" data-category="kampane"
+               data-large="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=800&fit=crop"
+               title="Výkonnostní marketing – statistiky a ROI">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop"
+                 alt="Výkonnostní online marketing – ROI a statistiky kampaní" loading="lazy" width="400" height="300">
+            <div class="gallery-overlay">🔍</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner" style="margin-top:2rem">
+      <h2>Líbí se vám naše práce?</h2>
+      <p>Kontaktujte nás a probereme, co můžeme udělat pro váš online marketing.</p>
+      <a href="kontakt.html" class="btn">Chci nezávaznou konzultaci →</a>
+    </div>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Prohlížeč obrázků">
+    <button id="lightbox-close" aria-label="Zavřít">✕</button>
+    <button id="lightbox-prev" aria-label="Předchozí obrázek">‹</button>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:1rem">
+      <img id="lightbox-img" src="" alt="" style="max-width:90vw;max-height:80vh;border-radius:10px">
+      <p id="lightbox-caption" style="color:rgba(255,255,255,.7);font-size:.9rem"></p>
+    </div>
+    <button id="lightbox-next" aria-label="Další obrázek">›</button>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Digi<span>aro</span></a>
+          <p>Digitální marketingová agentura pro malé a střední firmy.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Služby</h4>
+          <ul>
+            <li><a href="sluzby.html#seo">SEO optimalizace</a></li>
+            <li><a href="sluzby.html#ppc">PPC kampaně</a></li>
+            <li><a href="sluzby.html#weby">Tvorba webů</a></li>
+            <li><a href="sluzby.html#social">Sociální sítě</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informace</h4>
+          <ul>
+            <li><a href="o-nas.html">O nás</a></li>
+            <li><a href="reference.html">Reference</a></li>
+            <li><a href="fotogalerie.html">Fotogalerie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="mailto:info@digiaro.cz">info@digiaro.cz</a></li>
+            <li><a href="tel:+420773123456">+420 773 123 456</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Digiaro s.r.o. Všechna práva vyhrazena.</span>
+        <span><a href="#">Ochrana osobních údajů</a> · <a href="sitemap.xml">Sitemap</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner">
+    🍪 Používáme cookies. <a href="#">Více informací</a>
+    <button id="cookie-accept">Souhlasím</button>
+  </div>
+  <button id="scrolltop" aria-label="Zpět nahoru">↑</button>
+
+  <script src="js/main.min.js" defer></script>
+  <script src="js/gallery.min.js" defer></script>
+  <script>
+    // Gallery filter
+    function filterGallery(cat){
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(function(item){
+        if(cat==='all' || item.dataset.category===cat){
+          item.style.display='';
+        } else {
+          item.style.display='none';
+        }
+      });
+      document.querySelectorAll('[id^="btn-"]').forEach(function(b){
+        b.className='btn btn-outline';
+        b.style.color='var(--primary)';
+      });
+      const active = document.getElementById('btn-'+cat);
+      if(active){ active.className='btn btn-primary'; active.style.color=''; }
+    }
+  </script>
+</body>
+</html>
